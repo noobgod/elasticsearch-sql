@@ -61,7 +61,7 @@
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>x-pack-transport</artifactId>
-            <version>5.6.0</version>
+            <version>${elasticsearch.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.elasticsearch.client</groupId>
