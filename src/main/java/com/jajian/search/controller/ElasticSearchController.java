@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @Auther: JaJIan
  * @Date: 2018/12/09 13:53
  */
-
 @RestController
 @RequestMapping("/es/data")
 public class ElasticSearchController {
