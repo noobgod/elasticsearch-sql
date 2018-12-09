@@ -6,7 +6,6 @@ import com.alibaba.druid.pool.ElasticSearchDruidDataSourceFactory;
 import com.alibaba.druid.pool.ElasticSearchResultSetMetaDataBase;
 import com.alibaba.druid.util.jdbc.ResultSetMetaDataBase;
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Sets;
 import com.jajian.search.common.ElasticSearchConfig;
 import com.jajian.search.dto.IndexRowData;
 import com.jajian.search.dto.SearchResultDTO;
@@ -20,6 +19,7 @@ import net.sf.jsqlparser.util.deparser.ExpressionDeParser;
 import net.sf.jsqlparser.util.deparser.SelectDeParser;
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.util.set.Sets;
 import org.elasticsearch.plugin.nlpcn.QueryActionElasticExecutor;
 import org.elasticsearch.search.SearchHits;
 import org.nlpcn.es4sql.SearchDao;
@@ -33,15 +33,14 @@ import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
 /**
- * @Auther: WUJIAJIAN776
- * @Date: 2018/10/26 13:53
+ * @Auther: JaJIan
+ * @Date: 2018/12/09 13:53
  * @Description: ES索引数据查询 - elasticsearch-sql 方式
  */
 @Service

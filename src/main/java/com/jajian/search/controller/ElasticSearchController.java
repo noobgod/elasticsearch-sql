@@ -1,6 +1,5 @@
 package com.jajian.search.controller;
 
-
 import com.jajian.search.common.CommonResult;
 import com.jajian.search.dto.QueryDto;
 import com.jajian.search.dto.SearchResultDTO;
@@ -10,6 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @Auther: JaJIan
+ * @Date: 2018/12/09 13:53
+ */
 
 @RestController
 @RequestMapping("/es/data")
