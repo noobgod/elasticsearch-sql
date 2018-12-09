@@ -34,4 +34,9 @@ public class ElasticSearchController {
         return CommonResult.success(resultDTO.getResult());
     }
 
+    @PostMapping(value = "/explain")
+    public CommonResult explain(@RequestBody QueryDto queryDto) {
+        return CommonResult.success(elasticSearchSqlService.explain(queryDto.getSql()));
+    }
+
 }
